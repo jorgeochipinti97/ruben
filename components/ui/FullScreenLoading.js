@@ -10,6 +10,7 @@ export const FullScreenLoading = () => {
         justifyContent='center' 
         alignItems='center' 
         height='calc(100vh - 200px)'
+        width={'100vw'}
     >
         <Typography sx={{ mb: 3 }} variant="h2"  fontWeight={ 200 } fontSize={ 50 }>Espere por favor...</Typography>
         <CircularProgress thickness={ 2 } />
