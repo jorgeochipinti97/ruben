@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <LayoutUser title={'Ruben Ochipinti'}>
         <Confetti
-          width={1000}
+          width={500}
           tweenDuration={5000}
           
           height={1000}
