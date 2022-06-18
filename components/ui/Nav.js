@@ -17,8 +17,11 @@ export const Nav = () => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" color="inherit" component="div">
+                        <Box sx={{mr:2}}>
+                            
+                        <GavelIcon />
+                        </Box>
                         Ruben Ochipinti
-                        <GavelIcon/>
                     </Typography>
                     <Box sx={{ flexGrow: 1 }} />
 
