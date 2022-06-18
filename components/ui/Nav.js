@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import NextLink from 'next/link';
 import { Button, Link } from '@mui/material';
-
+import GavelIcon from '@mui/icons-material/Gavel';
 export const Nav = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -18,6 +18,7 @@ export const Nav = () => {
                     </IconButton>
                     <Typography variant="h6" color="inherit" component="div">
                         Ruben Ochipinti
+                        <GavelIcon/>
                     </Typography>
                     <Box sx={{ flexGrow: 1 }} />
 
