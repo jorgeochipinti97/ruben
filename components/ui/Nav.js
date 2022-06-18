@@ -14,12 +14,12 @@ export const Nav = () => {
             <AppBar position="static">
                 <Toolbar variant="dense">
                     <IconButton edge="start" color="inherit" aria-label="menu" sx={{color:'white', mr: 2, display: { xs: 'block', md: 'none', lg: 'none', xl: 'none' } }}>
-                        <MenuIcon />
+                        <GavelIcon />
+                        {/* <MenuIcon /> */}
                     </IconButton>
                     <Typography variant="h6" color="inherit" component="div">
-                        <Box sx={{mr:2}}>
+                        <Box sx={{mr:2}} display='flex'>
                             
-                        <GavelIcon />
                         </Box>
                         Ruben Ochipinti
                     </Typography>
