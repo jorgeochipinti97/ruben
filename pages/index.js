@@ -6,27 +6,37 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { LayoutUser } from '../components/layout/LayoutUser'
 import { FullScreenLoading } from '../components/ui'
-import Confetti from 'react-confetti'
+import confetti from 'canvas-confetti'
+
 export default function Home() {
   const [time, setTime] = useState(false)
   useEffect(() => {
     const int = setInterval(() => {
       setTime(true)
       clearInterval(int)
-    }, 2000);
+    }, 1200);
   }, [])
+
+  useEffect(()=>{
+    confetti({
+      particleCount: 300,
+      angle: 60,
+      spread: 100,
+      origin: { x: 0 }
+    });
+    // and launch a few from the right edge
+    confetti({
+      particleCount: 300,
+      angle: 120,
+      spread: 100,
+      origin: { x: 1 }
+    });
+  },[])
   const pics = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]
 
   return (
     <>
       <LayoutUser title={'Ruben Ochipinti'}>
-        <Confetti
-          width={500}
-          tweenDuration={5000}
-          
-          height={1000}
-         
-        />
         <Box display='flex' justifyContent='center'>
 
           <div data-aos="fade-up"
